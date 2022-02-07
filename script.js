@@ -4,8 +4,6 @@
 let stringing = document.getElementById('name').value;
 let result;
 let dropdown = document.getElementById('dropdown').value;
-let one = document.querySelector(".hej");
-one = stringing.toUpperCase();
 
 
 startForm();
