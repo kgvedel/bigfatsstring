@@ -4,6 +4,9 @@
 let stringing = document.getElementById('name').value;
 let result;
 let dropdown = document.getElementById('dropdown').value;
+let one = document.querySelector(".hej");
+one = stringing.toUpperCase();
+
 
 startForm();
 
@@ -17,6 +20,7 @@ function clickButton(){
 
 stringing = document.getElementById('name').value;
 dropdown = document.getElementById('dropdown').value;
+dropdown[1] = stringing.toUpperCase();
 
 console.log(stringing);
 document.removeEventListener("click", clickButton);
@@ -25,8 +29,8 @@ changeValue();
 }
 
 function changeValue(){
-    dropdown.firstNamefind = stringing.toLowerCase();
-    upperAndlower = stringing.toUpperCase();
+    dropdown = document.getElementById('dropdown').value;
+   
 result = dropdown;
 console.log(result);
 }
