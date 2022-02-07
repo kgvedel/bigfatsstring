@@ -7,6 +7,7 @@ let dropdown = document.getElementById('dropdown').value;
 let output = document.getElementById('res');
 
 
+
 startForm();
 
 function startForm(){
@@ -18,8 +19,7 @@ document.querySelector("button").addEventListener("click", clickButton);
 function clickButton(){
 
 stringing = document.getElementById('name').value;
-dropdown = document.getElementById('dropdown').value;
-dropdown[1] = stringing.toUpperCase();
+dropdown.value
 
 console.log(stringing);
 document.removeEventListener("click", clickButton);
