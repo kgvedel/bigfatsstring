@@ -3,7 +3,9 @@
 
 let stringing = document.getElementById('name').value;
 let result;
-let dropdown = document.getElementById('dropdown');
+let dropdown = document.getElementById('dropdown').value;
+let output = document.getElementById('res');
+
 
 
 startForm();
@@ -46,6 +48,9 @@ function changeValue(){
   //  dropdown = document.getElementById('dropdown').value;
 
 console.log(result);
+
+output.textContent = result;
+
 }
 
 
