@@ -25,6 +25,15 @@ changeValue();
 }
 
 function changeValue(){
+
+let upperAndLower = stringing.charAt(0).toUpperCase() + stringing.substring(1).toLowerCase(); 
+let findLength = stringing.indexOf(" ");
+let firstNamefind = stringing.slice(0,findLength);
+
+console.log(upperAndLower);
+console.log(findLength);
+console.log(firstNamefind);
+
     dropdown.firstNamefind = stringing.toLowerCase();
     upperAndlower = stringing.toUpperCase();
 result = dropdown;
