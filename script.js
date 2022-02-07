@@ -1,7 +1,7 @@
 //Mathilde and Katrine have been doing this assignment together and dying together #romeo&julietstyle
 
 
-let stringing = document.getElementById('input').value;
+let stringing = document.getElementById('name').value;
 let result;
 let dropdown = document.getElementById('dropdown').value;
 
@@ -15,7 +15,7 @@ document.querySelector("button").addEventListener("click", clickButton);
 
 function clickButton(){
 
-stringing = document.getElementById('input').value;
+stringing = document.getElementById('name').value;
 dropdown = document.getElementById('dropdown').value;
 
 console.log(stringing);
