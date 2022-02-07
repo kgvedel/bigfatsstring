@@ -1,40 +1,33 @@
 //Mathilde and Katrine have been doing this assignment together and dying together #romeo&julietstyle
 
 
-let stringing = document.getElementById('name').value;
-let result;
-let dropdown = document.getElementById('dropdown').value;
-let output = document.getElementById('res');
+const stringing = document.querySelector(".name").value;
+const result;
+const dd1 = document.querySelector(".dropdown");
+const output = document.querySelector(".res");
+const btn = document.querySelector("button");
 
-
+let name;
 
 startForm();
 
 function startForm(){
-    
-document.querySelector("button").addEventListener("click", clickButton);
+    stringing.value = "";
+    output.value = "";
+    btn.addEventListener("click", clickButton);
 
 }
 
 function clickButton(){
-console.log(stringing);
-stringing = document.getElementById('name').value;
-dropdown.value
-document.removeEventListener("click", clickButton);
-
-changeValue();
+let selectValue = dd1.value;
+switch(selectValue){
+    case "0":
+        name = stringing.value.toLowerCase();
+        output.value = `${name[0].toUpperCase()}${name.substring(1)}`;
 }
 
-function changeValue(){
 
-    switch (stringing){
-        case 0:
-           result = stringing.charAt(0).toUpperCase() + stringing.substring(1).toLowerCase();
-            break;
-        case 1:
-            result =stringing.indexOf(" ");
-            
-    }
+
 //let upperAndLower = stringing.charAt(0).toUpperCase() + stringing.substring(1).toLowerCase(); 
 //let findLength = stringing.indexOf(" ");
 //let firstNamefind = stringing.slice(0,findLength);
@@ -47,9 +40,7 @@ function changeValue(){
   //  upperAndlower = stringing.toUpperCase();
   //  dropdown = document.getElementById('dropdown').value;
 
-console.log(result);
-
-output.textContent = result;
+//output.textContent = selectedValue;
 
 }
 
