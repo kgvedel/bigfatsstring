@@ -4,6 +4,7 @@
 let stringing = document.getElementById('name').value;
 let result;
 let dropdown = document.getElementById('dropdown').value;
+let output = document.getElementById('res');
 
 
 startForm();
@@ -32,16 +33,18 @@ let upperAndLower = stringing.charAt(0).toUpperCase() + stringing.substring(1).t
 let findLength = stringing.indexOf(" ");
 let firstNamefind = stringing.slice(0,findLength);
 
-console.log(upperAndLower);
-console.log(findLength);
-console.log(firstNamefind);
+
 
     dropdown.firstNamefind = stringing.toLowerCase();
     upperAndlower = stringing.toUpperCase();
     dropdown = document.getElementById('dropdown').value;
    
-result = dropdown;
+
+result=upperAndLower;
 console.log(result);
+
+output.textContent = result;
+
 }
 
 
