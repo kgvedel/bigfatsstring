@@ -2,7 +2,7 @@
 
 
 let stringing = document.getElementById('name').value;
-let result;
+let result= "nothing so far";
 let dropdown = document.getElementById('dropdown').value;
 let output = document.getElementById('res');
 
@@ -17,9 +17,9 @@ document.querySelector("button").addEventListener("click", clickButton);
 }
 
 function clickButton(){
-console.log(stringing);
+console.log("input is: "+ stringing);
 stringing = document.getElementById('name').value;
-dropdown.value
+dropdown = document.getElementById('dropdown').value;
 document.removeEventListener("click", clickButton);
 
 changeValue();
@@ -27,12 +27,19 @@ changeValue();
 
 function changeValue(){
 
-    switch (stringing){
-        case 0:
+    switch (dropdown){
+       
+        case "0":
            result = stringing.charAt(0).toUpperCase() + stringing.substring(1).toLowerCase();
+           console.log("find  - case 0");
             break;
-        case 1:
-            result =stringing.indexOf(" ");
+        case "1":
+            result = stringing.slice(0,stringing.indexOf(" "));
+            console.log("find first name- case 1");
+           break;
+        case "2":
+            result = stringing.indexOf(" ");
+           console.log("find length - case 2");
             
     }
 //let upperAndLower = stringing.charAt(0).toUpperCase() + stringing.substring(1).toLowerCase(); 
@@ -43,11 +50,7 @@ function changeValue(){
 //console.log(findLength);
 //console.log(firstNamefind);
 
-  //  dropdown.firstNamefind = stringing.toLowerCase();
-  //  upperAndlower = stringing.toUpperCase();
-  //  dropdown = document.getElementById('dropdown').value;
-
-console.log(result);
+console.log("result is " + result);
 
 output.textContent = result;
 
