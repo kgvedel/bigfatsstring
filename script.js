@@ -2,17 +2,18 @@
 
 
 let stringing = document.getElementById('name').value;
-let result= "nothing so far";
+let result;
 let dropdown = document.getElementById('dropdown').value;
 let output = document.getElementById('res');
 
+const btn = document.querySelector("button");
 
+let name;
 
 startForm();
 
 function startForm(){
-    
-document.querySelector("button").addEventListener("click", clickButton);
+    btn.addEventListener("click", clickButton);
 
 }
 
@@ -26,7 +27,6 @@ changeValue();
 }
 
 function changeValue(){
-
     switch (dropdown){
        
         case "0":
